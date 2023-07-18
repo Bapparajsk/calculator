@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="cal-head">
+            <span id="ans">0</span>
+        </div>
+        <div class="cal-body">
+
+            <!-- !row 1 -->
+            <div class="cal-body-row">
+                <div class="cal-body-box" onclick="ClearButton()">
+                    <span id="C" >C</span>
+                </div>
+                <div class="cal-body-box" onclick="number('7')">
+                    <span id="num7">7</span>
+                </div>
+                <div class="cal-body-box" onclick="number('4')">
+                    <span id="num4">4</span>
+                </div>
+                <div class="cal-body-box" onclick="number('1')">
+                    <span id="num1">1</span>
+                </div>
+                <div class="cal-body-box" onclick="number('00')">
+                    <span id="num00">00</span>
+                </div>
+            </div>
+
+            <!-- !row 2 -->
+            <div class="cal-body-row">
+                <div class="cal-body-box" onclick="Remainder()">
+                    <span id="remain">%</span>
+                </div>
+                <div class="cal-body-box" onclick="number('8')">
+                    <span id="num8">8</span>
+                </div>
+                <div class="cal-body-box" onclick="number('5')">
+                    <span id="num5">5</span>
+                </div>
+                <div class="cal-body-box" onclick="number('2')">
+                    <span id="num2">2</span>
+                </div>
+                <div class="cal-body-box" onclick="number('0')">
+                    <span id="num0">0</span>
+                </div>
+            </div>
+
+            <!-- !row 3 -->
+            <div class="cal-body-row">
+                <div class="cal-body-box" onclick="BackSpecs()">
+                    <i id="back" class="fa-solid fa-delete-left"></i>
+                </div>
+
+                <div class="cal-body-box" onclick="number('9')">
+                    <span id="num9">9</span>
+                </div>
+                <div class="cal-body-box" onclick="number('6')">
+                    <span id="num6">6</span>
+                </div>
+                <div class="cal-body-box" onclick="number('3')">
+                    <span id="num3">3</span>
+                </div>
+                <div class="cal-body-box" onclick="Dot()">
+                    <span id="dot">.</span>
+                </div>
+            </div>
+
+            <!-- !row 4 -->
+            <div class="cal-body-row">
+                <div class="cal-body-box" onclick="Action('/')">
+                    <span class="cal-row4-text" id="divide">/</span>
+                </div>
+                <div class="cal-body-box" onclick="Action('*')">
+                    <span class="cal-row4-text" id="multiply">*</span>
+                </div>
+                <div class="cal-body-box" onclick="Action('-')">
+                    <span class="cal-row4-text box" id="minus">_</span>
+                </div>
+                <div class="cal-body-box" onclick="Action('+')">
+                    <span class="cal-row4-text" id="plus">+</span>
+                </div>
+                <div class="cal-body-box" onclick="Equal()">
+                    <span class="cal-row4-text" id="equal">=</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
